@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Sign up Form with Rounded Social Buttons</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+function myFunction() {
+  alert("You pressed a key inside the input field");
+}
+</script>
+<script>
+function myFunction(e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  var coor = "Coordinates: (" + x + "," + y + ")";
+  document.getElementById("demo").innerHTML = coor;
+}
+
+function clearCoor() {
+  document.getElementById("demo").innerHTML = "";
+}
+</script>
+<script>
+function isKeyPressed(event) {
+  if (event.altKey) {
+    alert("The ALT key was pressed!");
+  } else {
+    alert("The ALT key was NOT pressed!");
+  }
+}
+</script>
+
+
+
+
+<style>
+body {
+	background: #cccccc;
+}
+.form-control {
+	font-size: 16px;
+	transition: all 0.4s;
+	box-shadow: none;
+}
+.form-control:focus {
+	border-color: #5cb85c;
+}
+.form-control, .btn {
+	border-radius: 50px;
+	outline: none !important;
+}
+.signup-form {
+	width: 480px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.signup-form form {
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 40px;
+}
+.signup-form a {
+	color: #5cb85c;
+}    
+.signup-form h2 {
+	text-align: center;
+	font-size: 34px;
+	margin: 10px 0 15px;
+CodeLab
+Show Output
+
+23
+
+.form-control:focus {
+
+24
+
+    border-color: #5cb85c;
+
+25
+
+}
+
+26
+
+.form-control, .btn {
+
+27
+
+    border-radius: 50px;
+
+28
+
+    outline: none !important;
+
+29
+
+}
+
+30
+
+.signup-form {
+
+31
+
+    width: 480px;
+
+32
+
+    margin: 0 auto;
+
+33
+
+    padding: 30px 0;
+
+34
+
+}
+
+35
+
+.signup-form form {
+
+36
+
+    border-radius: 5px;
+
+37
+
+    margin-bottom: 20px;
+
+38
+
+    background: #fff;
+
+39
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+40
+
+    padding: 40px;
+
+41
+
+}
+
+42
+
+.signup-form a {
+
+43
+
+    color: #5cb85c;
+
+44
+
+}    
+
+45
+
+.signup-form h2 {
+
+46
+
+    text-align: center;
+
+47
+
+    font-size: 34px;
+
+48
+
+    margin: 10px 0 15px;
+
+49
+
+}
+
+50
+
+.signup-form .hint-text {
+
+51
+
+    color: #999;
+
+52
+
+    text-align: center;
+
+53
+
+    margin-bottom: 20px;
+
+54
+
+}
+
+55
+
+.signup-form .form-group {
+
+56
+
+    margin-bottom: 20px;
+
+57
+
+}
+
+58
+
+.signup-form .btn {        
+
+59
+
+    font-size: 18px;
+
+60
+
+    line-height: 26px;
+
+61
+
+    font-weight: bold;
+
+62
+
+    text-align: center;
+
+63
+
+}
+
+64
+
+.signup-btn {
+
+65
+
+    text-align: center;
+
+66
+
+    border-color: #5cb85c;
+
+67
+
+    transition: all 0.4s;
+
+68
+
+}
+
+69
+
+.signup-btn:hover {
+
+70
+
+    background: #5cb85c;
+
+71
+
+    opacity: 0.8;
+
+ 
+Switch to SQL Mode
+Auto update
+
+Share this example with Facebook, Twitter, Gmail. Please give us a Like, if you find it helpful.
+
+}
+.signup-form .hint-text {
+	color: #999;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form .btn {        
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+.signup-btn {
+	text-align: center;
+	border-color: #5cb85c;
+	transition: all 0.4s;
+}
+.signup-btn:hover {
+	background: #5cb85c;
+	opacity: 0.8;
+}
+.or-seperator {
+	margin: 50px 0 15px;
+	text-align: center;
+	border-top: 1px solid #e0e0e0;
+}
+.or-seperator b {
+	padding: 0 10px;
+	width: 40px;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	position: relative;
+	top: -22px;
+	z-index: 1;
+}
+.social-btn .btn {
+	color: #fff;
+	margin: 10px 0 0 15px;
+	font-size: 15px;
+	border-radius: 50px;
+	font-weight: normal;
+	border: none;
+	transition: all 0.4s;
+}	
+.social-btn .btn:first-child {
+	margin-left: 0;
+}
+.social-btn .btn:hover {
+	opacity: 0.8;
+}
+.social-btn .btn-primary {
+	background: #507cc0;
+}
+.social-btn .btn-info {
+	background: #64ccf1;
+}
+.social-btn .btn-danger {
+	background: #df4930;
+}
+.social-btn .btn i {
+	float: left;
+	margin: 3px 10px;
+	font-size: 20px;
+}
+</style>
+</head>
+<body onmousedown="is Key pressed(event)">
+<div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>Register Your Query</h2>
+		
+		
+        <div class="form-group">
+        	<input type="text"  class="form-control input-lg" name="Name" placeholder="Name" required="required">
+        </div>
+        
+  <div class="form-group">
+        	<input type="text"  class="form-control input-lg" name="Last Name" placeholder="Last Name" required="required">
+        </div>
+		<div class="form-group">
+        	<input type="Mobile No" class="form-control input-lg" name="Mobile No" placeholder="Mobile No" required="required">
+        </div>
+		<div class="form-group">
+            <input type="Email Id" class="form-control input-lg" name="Email Id" placeholder="Email Address" required="required">
+        </div>
+		<div class="form-group">
+            <input type="Location" class="form-control input-lg" name="Location" placeholder="Location" required="required">
+        </div> 
+        <div class="form-group">
+            <input type="Comapny Name" class="form-control input-lg" name="Comapny Name" placeholder="Company Name" required="required">
+        </div> 
+        
+        <div class="form-group">
+     	 <textarea input type="Query" class="form-control input-lg" name="Query" placeholder="Query" required="required"></textarea>
+      </div>
+        <div class="form-group">
+            <button type="submit" onclick="myFunction()" class="btn btn-success btn-lg btn-block signup-btn">Send</button>
+        </div>
+        <div class="pop-up-content-wrap"><h2>Thank you we will work on it</h2></div>
+    </form>
+    <div class="text-center">Already have an account? <a href="./login12.html">Login here</a></div>
+</div>
+</body>
+</html>

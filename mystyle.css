@@ -1,0 +1,59 @@
+body
+{
+	background: url('Hotel3.jpg');
+	background-size: cover;
+	font-family: all;
+}
+.wrap{
+	max-width:500px;
+	border-radius:50px;
+	margin: auto;
+	background: rgba(0,0,0,0.8);
+	box-sizing: content-box;
+	padding:40px
+	color:#fff;
+	margin-top: 100px
+}
+h2{
+	text-align: center;
+
+}
+input[type=text],input[type=password]{
+	  width: 95%;
+	  box-sizing: content-box;
+	  padding: 12px 5px;
+	  background: rgba(0,0,0,0.10);
+	  outline: none;
+	  border-bottom: 1px dotted #fff;
+	  color: #fff;
+	  border-radius: 5px;
+	  margin: 5px;
+	  font-weight: bold;
+
+}
+input[type=submit]{
+	width: 95%;
+	box-sizing:border-box;
+	padding: 8px 2px;
+	margin-top: 20px;
+	outline: none;
+	border:none;
+	background: C0C0C0;
+	opacity: 0.5;
+	border-radius: 10px;
+	font-size: 20px;
+	color: 20px;
+}
+
+input[type=submit] :hover{
+
+background: #003366;
+opacity: 0.5;
+
+}
+
+
+
+
+
+

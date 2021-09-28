@@ -1,0 +1,13 @@
+.{
+	box-sizing: border-box;
+
+}
+.child{
+	border: 1px solid blue;
+}
+
+@media (min-width: 768px) {
+.parent{
+	display: flex;
+}
+}
